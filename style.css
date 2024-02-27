@@ -1,0 +1,118 @@
+.subscription-option {
+    margin-left: 35% !important;
+    cursor: pointer;
+    width: 300px;
+    height: 270px fit-content;
+    padding: 20px;
+    text-align: left; /* Align the content to the left */
+    border: 1px solid #ddd;
+    margin: 2%;
+    display: flex; /* Use flexbox to align items in a row */
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap; /* Allow content to wrap to the next line if needed */
+    position: relative; /* Make position relative for absolute positioning of label */
+}
+
+.subscription-option input[type="radio"] {
+    margin-right: 10px; /* Add some space between radio button and paragraph */
+}
+
+.discounted-values {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.subscription-option p {
+    margin: 0; /* Remove default margin for paragraph */
+}
+
+.label-inside-border {
+    position: absolute;
+    top: -5px;
+    left: 75%;
+    width: 40%;
+    transform: translateX(-50%);
+    background-color:  rgb(211, 61, 231);
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    z-index: 1;
+}
+
+.options-container {
+    width: 100%; /* Make container take full width */
+    display: flex;
+    justify-content: space-between; /* Space out the two divs */
+    margin-top: 8px; /* Add margin between the divs */
+}
+
+.size-options {
+    width: 48%; /* Adjust width as needed */
+    box-sizing: border-box;
+    margin: 8px 0; /* Adjust margin as needed */
+}
+
+.color-options {
+    width: 48%; /* Adjust width as needed */
+    box-sizing: border-box;
+    margin: 8px 0; /* Adjust margin as needed */
+}
+
+.subscription-option:hover {
+    border: 2px solid rgb(211, 61, 231);
+    box-shadow: 5px 5px 5px 5px rgba(211, 61, 231, 0.5); /* Set the box shadow color with rgba */
+}
+
+button {
+    width: 340px;
+    margin-left: 35%;
+    font-size: 18px; /* Adjust the font size */
+    padding: 12px; /* Add padding for a more comfortable click area */
+    background-color:  rgb(211, 61, 231); /* Use a deep blue color */
+    border: none; /* Remove the border */
+    border-radius: 5px; /* Add a slight border radius */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+button:hover {
+    background-color:  rgba(211, 61, 231, 0.5);; /* Darken the color on hover */
+}
+
+.price-data {
+    margin-left: 30px;
+}
+.total-section{
+    margin-left: 35%;
+    color: blueviolet;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; 
+}
+.total-section p {
+    margin:  0 35px; 
+}
+.price {
+    background-color: blueviolet; color: white;
+}
+/* Style for the radio buttons */
+.subscription-option input[type="radio"] {
+    margin-right: 10px;
+    appearance: none; /* Remove default radio button appearance */
+    width: 10px;
+    height: 10px;
+    border: 2px solid blueviolet; /* Border color for unchecked state */
+    border-radius: 50%; /* Make it round */
+    outline: none; /* Remove outline */
+    transition: border-color 0.3s ease; /* Add transition effect */
+}
+
+/* Style for the checked state of the radio buttons */
+.subscription-option input[type="radio"]:checked {
+    border-color: blueviolet; /* Change border color when checked */
+    background-color: blueviolet; /* Add a background color when checked */
+}

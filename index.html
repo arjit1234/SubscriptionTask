@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Subscription Page</title>
+</head>
+<body>
+
+    <div class="subscription-container">
+        <div class="subscription-option"  onclick="toggleOptions(this)">
+            <input type="radio" name="subscription" id="topRadio" value="middle"> <br>
+            <h4>1 Unit</h4>&nbsp;
+            <div class="price">10% off</div>&nbsp;&nbsp;&nbsp;
+            <div class="price-data">
+                <p class="price-value" value="15.00"><b>$15.00 USD</b></p>
+                <p style="text-decoration: line-through;">$24.00 USD</p>
+            </div>
+            <div class="options-container">
+                <div class="size-options">
+                    <label for="middleSize">Size:</label><br />
+                    <select class="middleSize">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <select class="middleSize">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </div>
+                <div class="color-options">
+                    <label for="middleColor">Color:</label><br />
+                    <select class="middleColor">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                    </select><br />
+                    <select class="middleColor">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="subscription-option" onclick="toggleOptions(this)">
+            <input type="radio" name="subscription" id="middleRadio" value="middle"> <br>
+            <div class="label-inside-border">MOST POPULAR</div>
+            <h4>2 Unit</h4>&nbsp;
+            <div class="price">10% off</div> &nbsp;&nbsp;
+            <div class="price-data">
+                <p class="price-value" value="18.00"><b>$18.00 USD</b></p>
+                <p style="text-decoration: line-through;">$24.00 USD</p>
+            </div>
+            <div class="options-container">
+                <div class="size-options">
+                    <label for="middleSize">Size:</label><br />
+                    <select class="middleSize">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select><br /> 
+                    <select class="middleSize">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </div>
+                <div class="color-options">
+                    <label for="middleColor">Color:</label><br />
+                    <select class="middleColor">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                    </select><br />
+                    <select class="middleColor">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="subscription-option" onclick="toggleOptions(this)">
+            <input type="radio" name="subscription" id="bottomRadio" value="bottom">
+            <h4>3 Unit</h4> &nbsp;
+            <div class="price">10% off</div>&nbsp;&nbsp;
+            <div class="price-data">
+                <p class="price-value" value="10.00"><b>$10.00 USD</b></p>
+                <p style="text-decoration: line-through;">$24.00 USD</p>
+            </div>
+            <div class="options-container">
+                <div class="size-options">
+                    <label for="middleSize">Size:</label><br />
+                    <select class="middleSize">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select><br />
+                    <select class="middleSize">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </div>
+                <div class="color-options">
+                    <label for="middleColor">Color:</label><br />
+                    <select class="middleColor">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                    </select><br />
+                    <select class="middleColor">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="total-section">
+            <p>Free Delivery</p>
+            <p>Total: $<span id="total-price">0.00</span> USD</p>
+        </div>
+        <button type="submit" class="btn btn-success"><small><i class="fa fa-plus"></i>Add to Cart</small></button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
